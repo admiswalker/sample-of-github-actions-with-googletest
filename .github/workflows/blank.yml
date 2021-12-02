@@ -10,9 +10,8 @@ jobs:
     - name: printing where i am.
       run: |
         pwd
-	ls
+        ls
     - name: build
       run: |
         make
-	./exe
-	
+        ./exe
