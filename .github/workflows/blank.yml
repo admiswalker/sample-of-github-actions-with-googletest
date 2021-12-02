@@ -11,7 +11,3 @@ jobs:
       run: |
         pwd
         ls
-    - name: build
-      run: |
-        make
-        ./exe
