@@ -1,12 +1,15 @@
 name: CICDTEST
 
-on: [push]
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - users: actions/checkout@v2
     - name: printing where i am.
       run: |
         pwd
