@@ -1,0 +1,18 @@
+name: CICDTEST
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - users: actions/checkout@v2
+    - name: printing where i am.
+      run: |
+        pwd
+	ls
+    - name: build
+      run: |
+        make
+	./exe
+	
