@@ -12,9 +12,15 @@ jobs:
     steps:
     - name: printing where i am.
       run: |
+        echo 'default'
+        pwd
+        ls
+        echo 'after $ cd ../..'
+        cd ../..
         pwd
         ls
     - name: build
       run: |
+        cd ../../
         make
         ./exe
