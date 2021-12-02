@@ -1,5 +1,7 @@
 # Source files
 SRCS = ./main.cpp
+HEADS = ./src/example.cpp
+HEADS_t = ./test/example.hpp
 
 # Name of generate file: 生成ファイル名
 TARGET = exe
@@ -19,7 +21,7 @@ CFLAGS += -O3
 LIB_GOOGLETEST = ./googletest-master/build/lib/libgtest.a
 
 
-$(TARGET): $(LIB_GOOGLETEST) $(SRCS)
+$(TARGET): $(LIB_GOOGLETEST) $(SRCS) $(HEADS) $(HEADS_t)
 	@echo "\n============================================================\n"
 	@echo "SRCS: \n$(SRCS)\n"
 	@echo "CFLAGS: \n$(CFLAGS)"
