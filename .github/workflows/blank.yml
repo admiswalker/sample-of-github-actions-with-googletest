@@ -10,10 +10,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-     - name: checkout repository
-       uses: actions/checkout@v2
-       with:
-         ref: main
+    - name: checkout repository
+      uses: actions/checkout@v2
+      with:
+        ref: main
     - name: printing where i am.
       run: |
         echo 'default'
