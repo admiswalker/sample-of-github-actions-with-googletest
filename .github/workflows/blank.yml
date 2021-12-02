@@ -15,12 +15,12 @@ jobs:
         echo 'default'
         pwd
         ls
-        echo 'after $ cd ../..'
-        cd ../..
+        echo 'after $ cd ..'
+        cd ..
         pwd
         ls
     - name: build
       run: |
-        cd ../../
+        cd ..
         make
         ./exe
