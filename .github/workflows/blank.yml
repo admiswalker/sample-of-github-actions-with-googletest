@@ -10,6 +10,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/upload-artifact@v2
     - name: printing where i am.
       run: |
         echo 'default'
