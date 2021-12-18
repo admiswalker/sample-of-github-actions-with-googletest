@@ -13,7 +13,7 @@ GitHub Actions を利用するには，repository の `.github/workflows/` direc
 
 #### Repostiory の読み込み設定
 Repostiory を読み込むには，`actions/checkout@v2` を使う．
-このとき，読み込む branch を指定する．
+このとき，読み込む branch を指定する．何も branch を指定しないと，それぞれトリガーされた branch が読み込まれる．
 
 例：
 ```yml
